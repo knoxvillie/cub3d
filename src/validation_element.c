@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 11:59:22 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/08/19 15:18:53 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/09/01 20:34:04 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,11 @@ void	ft_check_value_elements(t_data *data)
 	{
 		if (ft_element_done(data->magic))
 			return ;
-		if (ft_is_line_space(data->line))
+		if (ft_is_line_space(data->file_map[i]))
+		{
+			i++;
 			continue ;
+		}
 		j = 0;
 		data->generic = ft_split(data->file_map[i], ' ');
 		while (data->elements[j]
