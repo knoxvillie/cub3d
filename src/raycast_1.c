@@ -6,7 +6,7 @@
 /*   By: fvalli-v <fvalli-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 16:43:58 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/08/27 16:57:07 by fvalli-v         ###   ########.fr       */
+/*   Updated: 2023/09/03 14:53:31 by fvalli-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	update_tex(t_data *img, int h)
 		img->wallhit = img->pos_x + img->perpwalldist * img->raydir_x;
 	img->wallhit -= floor((img->wallhit));
 	img->tex_x = (int)(img->wallhit * (float)img->tex_w);
-	if (img->dirwall == SOUTH)
+	if (img->dirwall == SOUTH || img->dirwall == WEST)
 		img->tex_x = img->tex_w - img->tex_x - 1;
 	img->tex_step = 1.0 * img->tex_w / img->lineheight;
 	img->tex_pos = (img->drawstart - h / 2 + img->lineheight / 2);

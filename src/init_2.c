@@ -6,7 +6,7 @@
 /*   By: fvalli-v <fvalli-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 16:43:58 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/08/27 16:45:37 by fvalli-v         ###   ########.fr       */
+/*   Updated: 2023/09/03 14:54:22 by fvalli-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ void	init_tex(t_data *img)
 	img->so_ptr.img = img->so_vptr;
 	img->we_ptr.img = img->we_vptr;
 	img->ea_ptr.img = img->ea_vptr;
-	img->tex[NORTH] = get_addr_tex_img(img, &img->no_ptr);
-	img->tex[SOUTH] = get_addr_tex_img(img, &img->so_ptr);
-	img->tex[WEST] = get_addr_tex_img(img, &img->we_ptr);
-	img->tex[EAST] = get_addr_tex_img(img, &img->ea_ptr);
+	img->tex[NORTH] = get_addr_tex_img(img, &img->so_ptr);
+	img->tex[SOUTH] = get_addr_tex_img(img, &img->no_ptr);
+	img->tex[WEST] = get_addr_tex_img(img, &img->ea_ptr);
+	img->tex[EAST] = get_addr_tex_img(img, &img->we_ptr);
 }
 
 /* fov(field of view) is the value which represents
