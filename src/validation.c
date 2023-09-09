@@ -6,7 +6,7 @@
 /*   By: fvalli-v <fvalli-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/15 17:23:18 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/09/01 20:39:52 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/09/09 13:03:22 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,6 @@ void	ft_validation(t_data *data)
 	ft_handle_map_cp(data);
 	ft_check_map_tiles(data);
 	ft_copy_table(data);
+	ft_print_map(data->map_flood);
 	ft_flood_fill(data, data->p_posx, data->p_posy, "NSEW0");
 }

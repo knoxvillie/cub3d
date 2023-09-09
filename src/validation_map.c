@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 19:54:16 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/08/21 11:20:36 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/09/09 13:01:20 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void	ft_copy_table(t_data *data)
 
 void	ft_flood_fill(t_data *data, int x, int y, char *elements)
 {
-	if (x < 0 || x >= data->bg_line || y < 0 || y >= data->bg_column)
+	if (x < 0 || x >= (data->bg_line + 2) || y < 0 || y >= (data->bg_column + 2))
 		return ;
 	if (data->map_flood[y][x] == '#')
 		ft_free_data_print_exit(data,

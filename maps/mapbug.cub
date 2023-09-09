@@ -1,0 +1,10 @@
+SO ./assets/door.xpm
+NO ./assets/nbar.xpm
+WE ./assets/pong.xpm
+EA ./assets/quit.xpm
+F 198,006,85
+C 000,160,90
+
+1111111111
+100000S001
+1111110111

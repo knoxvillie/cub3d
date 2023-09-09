@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/19 15:35:53 by kfaustin          #+#    #+#             */
-/*   Updated: 2023/08/27 19:01:29 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/09/09 12:52:07 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,21 @@ int	ft_real_size(char *str)
 		str++;
 	}
 	return (size);
+}
+
+void	ft_print_map(char **map)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	while (map[i])
+	{
+		j = 0;
+		while (map[i][j])
+			write (STDOUT_FILENO, &map[i][j++], 1);
+		write (STDOUT_FILENO, "\n", 1);
+		i++;
+	}
+	write (STDOUT_FILENO, "\n", 1);
 }

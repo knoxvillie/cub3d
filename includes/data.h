@@ -6,7 +6,7 @@
 /*   By: fvalli-v <fvalli-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/02 10:45:55 by fvalli-v          #+#    #+#             */
-/*   Updated: 2023/08/27 19:21:33 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/09/09 12:51:05 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -172,6 +172,7 @@ char		*ft_first_last_line(char *line, int size);
 
 // --> general_2.c
 int			ft_real_size(char *str);
+void	ft_print_map(char **map);
 
 // --> init_1.c
 void		init_data_pointers(t_data *data);

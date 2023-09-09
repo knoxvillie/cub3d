@@ -1,13 +1,13 @@
 
-NAME		= cub3d
+NAME		= cub3D
 
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror -g #-fsanitize=address
 
 LIBFT		= libft.a
 LIBFTDIR	= ./includes/libft
-INC=/usr/include/
-INCLIB=$(INC)/../lib
+INC=		/usr/include/
+INCLIB=		$(INC)/../lib
 
 MINILIBX	= minilibx-linux
 MINILIBA	= libmlx_Linux.a
